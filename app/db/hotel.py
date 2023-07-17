@@ -34,12 +34,19 @@ def get_cheapest_hotel_list(destination, check_in_date, check_out_date):
                 continue
     
     for hotel in cheapest_hotel_name_list:
-        hotel_instance = vars(HotelResponse(city=destination,
-                                            check_in_date=check_in_date.strftime("%Y-%m-%d"),
-                                            check_out_date=check_out_date.strftime("%Y-%m-%d"),
-                                            hotel=hotel,
-                                            price=result_dict[hotel]['price']
-                                            ))
+        # hotel_instance = vars(HotelResponse(city=destination,
+        #                                     check_in_date=check_in_date.strftime("%Y-%m-%d"),
+        #                                     check_out_date=check_out_date.strftime("%Y-%m-%d"),
+        #                                     hotel=hotel,
+        #                                     price=result_dict[hotel]['price']
+        #                                     ))
+        hotel_instance = {
+            "City": destination,
+            "Check In Date": check_in_date.strftime("%Y-%m-%d"),
+            "Check Out Date": check_out_date.strftime("%Y-%m-%d"),
+            "Hotel": hotel,
+            "Price": result_dict[hotel]['price']
+        }
         cheapest_hotel_list.append(hotel_instance)
     
 
