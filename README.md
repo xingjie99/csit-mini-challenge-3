@@ -1,3 +1,3 @@
 # csit-mini-challenge-3
 
-![image](https://github.com/xingjie99/csit-mini-challenge-3/assets/69759370/cb83deb9-3ee3-43d6-8b7d-a12365d15589)
+![image](https://github.com/xingjie99/csit-mini-challenge-3/assets/69759370/60aaf2c2-00ed-4bab-8c78-8028235cf60d)
