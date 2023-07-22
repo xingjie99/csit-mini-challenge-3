@@ -1,3 +1,5 @@
+# Models for responses
+
 class FlightResponse:
     def __init__(self, city, departure_date, departure_airline, departure_price, return_date, return_airline, return_price):
         self.city = city

@@ -1,5 +1,5 @@
 import json
-from flask import Flask, request, jsonify, Response
+from flask import Flask, request, Response
 from app.utils import *
 from app.db.flight import *
 from app.db.hotel import *
